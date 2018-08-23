@@ -68,6 +68,7 @@ screen freehand_draw():
             
             frame:
                 background "#FFF"
+                padding (0, 0)
                 xsize 400
                 ysize 400
 
