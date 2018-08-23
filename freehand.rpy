@@ -133,7 +133,8 @@ init python:
             c = Color(self._colour).rgb
             values = []
             for item in c:
-                values.append(int(item) * 255)
+                r = item * 255
+                values.append(int(r))
             return tuple(values)
 
         @colour.setter
