@@ -2,7 +2,7 @@ style draw_ui:
     spacing 2
 
 init python:
-    colours = ['#FFFFFF', '#000000', '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF']
+    colours = ['#FFFFFF', '#000000', '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF', '#FF7F7F', '#FBEFE3']
     default_colour = '#000'
     freehand_canvas = FreehandCanvas(default_colour, 400, 400)
 
@@ -26,7 +26,7 @@ init python:
     )
   
     circle_fill_hover_icon = Fixed(
-        Image("circle_icon.png"),
+        Image("circle_icon_fill.png"),
         Transform(Frame(Solid("#FFF"), 5, 5), alpha=0.5),
         xysize=(32, 32),
     )
@@ -78,8 +78,8 @@ screen freehand_draw():
             style "draw_ui"
             for colour in colours:
                 button:
-                    xsize 20
-                    ysize 20
+                    xsize 32
+                    ysize 32
                     background colour
                     action SetField(freehand_canvas, 'colour', colour)
 
