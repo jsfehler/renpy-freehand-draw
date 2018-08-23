@@ -1,2 +1,9 @@
 # renpy-freehand-draw
-Draw images in Ren'Py
+Draw on a canvas inside a Ren'Py game.
+
+## Features
+- Pencil
+- Line
+- Circle
+- Filled Circle
+- Adjustable line widths
